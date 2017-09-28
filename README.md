@@ -1,6 +1,6 @@
 # Tilde
 
-[![wercker status](https://app.wercker.com/status/9a0ac2a160631728cbaffb77f9eadb87/m/master "wercker status")](https://app.wercker.com/project/byKey/9a0ac2a160631728cbaffb77f9eadb87) [![Build Status](https://travis-ci.org/alrayyes/tilde.svg?branch=master)](https://travis-ci.org/alrayyes/tilde)
+[![wercker status](https://app.wercker.com/status/9a0ac2a160631728cbaffb77f9eadb87/s/master "wercker status")](https://app.wercker.com/project/byKey/9a0ac2a160631728cbaffb77f9eadb87) [![Build Status](https://travis-ci.org/alrayyes/tilde.svg?branch=master)](https://travis-ci.org/alrayyes/tilde)
 
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
