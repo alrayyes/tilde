@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     output: {
@@ -30,7 +31,7 @@ module.exports = {
         app: './src/index.js'
     },
     output: {
-        filename: '[name].bundle.js',
+        filename: '[name].[hash].js',
         path: path.resolve(__dirname, 'dist')
     },
     plugins: [
@@ -39,5 +40,8 @@ module.exports = {
             template: './src/index.template.ejs',
             inject: 'body'
         }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'runtime'
+        })
     ]
 };
