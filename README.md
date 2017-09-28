@@ -1,5 +1,7 @@
 # Tilde
 
+[![Build Status](https://travis-ci.org/alrayyes/tilde.svg?branch=master)](https://travis-ci.org/alrayyes/tilde)
+
 Inspired by [/r/startpages](https://www.reddit.com/r/startpages)—the idea is to have a homepage for your browser that is functional and sexy.
 
 ![Screenshot](SCREENSHOT.png?raw=true "Screenshot")
