@@ -41,4 +41,4 @@ The above is just the beginning. Open up the [index.html](index.html) file and r
 
 ## License
 
-Feel free to use this and modify it however you like.
+MIT License
