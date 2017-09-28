@@ -39,6 +39,22 @@ If you enter in a full domain or URL, you will be redirected to said domain or U
 
 The above is just the beginning. Open up the [index.html](index.html) file and read through the `CONFIG`!
 
+## Build
+
+### Yarn (recommended)
+```shell
+yarn install
+yarn build
+```
+
+### NPM
+```shell
+npm install
+npm build
+```
+
+Output should be in ./dist
+
 ## License
 
-MIT License
+[MIT License](LICENSE)
