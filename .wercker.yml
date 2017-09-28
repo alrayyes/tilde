@@ -1,0 +1,13 @@
+box: node
+build:
+  steps:
+    - yarn:
+      name: install dependencies
+
+    - script:
+      name: build
+      script: npm build   # Build here requires devDependencies
+
+    - yarn:
+      name: cleanup
+      production: true    # Remove devDepdencies
