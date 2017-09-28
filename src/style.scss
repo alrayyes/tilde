@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
+@import 'settings';
+
 body {
   position: absolute;
   top: 0;
@@ -9,8 +11,8 @@ body {
   margin: 0;
   padding: 0;
   transition: background .2s;
-  font-family: Lato, sans-serif;
-  color: #222;
+  font-family: $font;
+  color: $font-color;
 
   &.suggestions {
     #search-suggestions {
@@ -35,8 +37,8 @@ button:focus {
   border: 0;
   outline: 0;
   background: transparent;
-  color: #fff;
-  font-family: Lato, sans-serif;
+  color: $focus-color;
+  font-family: $font;
   text-align: center;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -65,7 +67,7 @@ a:focus {
 
 #search-form {
   padding: 1em;
-  background: #111;
+  background: $search-form-background-color;
   transition: background-color .5s;
   box-sizing: border-box;
   z-index: 2;
@@ -98,8 +100,8 @@ a:focus {
   cursor: pointer;
 
   &.highlight {
-    background-color: #fff;
-    color: #222;
+    background-color: $search-suggestion-background-color;
+    color: $search-suggestion-color;
 
     b::after {
       opacity: 0;
@@ -118,7 +120,7 @@ a:focus {
     right: 0;
     left: 0;
     height: 3px;
-    background-color: #fff;
+    background-color: $search-suggestion-background-color;
     opacity: .8;
   }
 }
@@ -126,7 +128,7 @@ a:focus {
 #help {
   display: block;
   padding: 8vw;
-  background: #fff;
+  background: $help-background-color;
   font-size: 1.3rem;
   z-index: 1;
 }
@@ -167,8 +169,8 @@ a:focus {
   width: 2.5em;
   margin-right: 1em;
   border-radius: 50%;
-  background-color: #222;
-  color: #fff;
+  background-color: $command-key-background-color;
+  color: $command-key-color;
   font-size: .8em;
   text-align: center;
 }
@@ -186,7 +188,7 @@ a:focus {
     height: 2px;
     transition: .2s;
     transform: translateX(-2em);
-    background-color: #222;
+    background-color: $command-name-background-color;
     opacity: 0;
   }
 }
