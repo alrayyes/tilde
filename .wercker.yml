@@ -25,3 +25,11 @@ build:
       name: cleanup dev dependencies
       code: |
         HOME=$YARN_CACHE yarn --prod
+deploy:
+  box: andthensome/alpine-surge-bash
+  steps:
+    - alrayyes/surge-deploy:
+        login: $SURGE_LOGIN
+        directory: $SURGE_DIRECTORY
+        token: $SURGE_TOKEN
+        domain: $SURGE_DOMAIN
