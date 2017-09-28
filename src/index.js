@@ -1,5 +1,5 @@
 import './style.css';
-var tilde = require('./tilde');
+import './tilde';
 
 function component() {
     element.classList.add();
