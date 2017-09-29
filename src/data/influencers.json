@@ -1,0 +1,14 @@
+[
+  {
+    "name":"Default",
+    "limit":5
+  },
+  {
+    "name":"History",
+    "limit":2
+  },
+  {
+    "name":"DuckDuckGo",
+    "limit":5
+  }
+]
