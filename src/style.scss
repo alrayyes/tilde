@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 @import 'settings';
+@import 'mixins';
 
 body {
   position: absolute;
@@ -20,41 +21,49 @@ body {
     }
   }
 
-  &.help #help.overlay,
-  &.form #search-form.overlay {
-    visibility: visible;
+  &.help {
+    #help.overlay {
+      @include overlay-visibility;
+    }
+  }
+
+  &.form {
+    #search-form.overlay {
+      @include overlay-visibility;
+    }
   }
 }
 
-input,
-button,
-input:focus,
-button:focus {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  background: transparent;
-  color: $focus-color;
-  font-family: $font;
-  text-align: center;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+input {
+  @include input-block($focus-color, $font);
+
+  &:focus {
+    @include input-block($focus-color, $font);
+  }
 }
 
-ul,
+button {
+  @include input-block($focus-color, $font);
+
+  &:focus {
+    @include input-block($focus-color, $font);
+  }
+}
+
+ul {
+  @include list-style;
+}
+
 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include list-style;
 }
 
-a,
-a:focus {
-  color: inherit;
-  outline: 0;
+a {
+  @include a-color;
+
+  &:focus {
+    @include a-color;
+  }
 }
 
 #clock {
@@ -77,15 +86,13 @@ a:focus {
   }
 }
 
-#search-input,
-#search-input:focus {
-  width: 100%;
-  margin-bottom: 20px;
-  font-size: 1.5em;
-  font-weight: 900;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-}
+#search-input {
+  @include search-input;
+
+  &:focus {
+    @include search-input;
+  }
+}r
 
 #search-suggestions {
   display: none;
@@ -193,10 +200,20 @@ a:focus {
   }
 }
 
-.command a:hover .command-name::after,
-.command a:focus .command-name::after {
-  transform: translateX(0);
-  opacity: 1;
+.command {
+  a {
+    &:hover {
+      .command-name::after {
+        @include command-name;
+      }
+    }
+
+    &:focus {
+      .command-name::after {
+        @include command-name
+      }
+    }
+  }
 }
 
 .overlay {

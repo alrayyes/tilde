@@ -1,0 +1,43 @@
+@mixin input-block($color, $font) {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: $color;
+  font-family: $font;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@mixin overlay-visibility {
+  visibility: visible;
+}
+
+@mixin list-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin a-color {
+  color: inherit;
+  outline: 0;
+}
+
+@mixin search-input {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 900;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+@mixin command-name {
+  transform: translateX(0);
+  opacity: 1;
+}
