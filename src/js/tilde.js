@@ -1,6 +1,6 @@
-import Commands from './data/commands.json';
-import Influencers from './data/influencers.json';
-import DefaultSuggestions from './data/defaultSuggestions.json';
+import Commands from '../data/commands.json';
+import Influencers from '../data/influencers.json';
+import DefaultSuggestions from '../data/defaultSuggestions.json';
 
 const CONFIG = {
 
