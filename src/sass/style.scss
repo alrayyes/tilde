@@ -247,9 +247,12 @@ a {
     margin-bottom: 0;
   }
 
-  #search-input,
-  #search-input:focus {
-    font-size: 3em;
+  #search-input {
+    @include search-input;
+
+    &:focus {
+      @include search-input;
+    }
   }
 }
 
